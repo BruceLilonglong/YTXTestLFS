@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YTXTestLFS_Example' do
+  pod 'YTXTestLFS', :path => '../'
+
+  target 'YTXTestLFS_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  end
+end
